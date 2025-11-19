@@ -55,7 +55,7 @@ export default function Signup(){
             <div className="w-[90%]">
                 <div className="w-full">
                     <div className="w-full flex items-center justify-between">
-                        <h1 className="text-white font-extrabold text-lg md:text-[24px]">Create Account</h1>
+                        <h1 className="text-white font-extrabold text-lg md:text-[20px]">Create Account</h1>
                             <div className="w-14 h-14 md:hidden relative">
                                 <Image
                                     src="/icons/logo.png"
@@ -66,12 +66,12 @@ export default function Signup(){
                     </div>
                     <div className="w-full flex items-center justify-center gap-2 mt-3">
                         <div className="w-4 h-1 bg-white"></div>
-                        <h1 className="text-white font-extrabold text-[18px]">OR</h1>
+                        <h1 className="text-white font-extrabold text-[16px]">OR</h1>
                         <div className="w-4 h-1 bg-white"></div>
                     </div>
                     <div className="w-full bg-white/10 rounded-full mt-3 p-1 shadow-inset flex gap-3 items-center justify-between">
-                        <button className="w-1/2 rounded-full p-2 cursor-pointer transition-all ease-in-out duration-300 group hover:bg-red-600  flex items-center justify-center gap-2 shadow bg-white">
-                            <div className="w-10 h-10 relative">
+                        <button className="w-1/2 rounded-full p-1 cursor-pointer transition-all ease-in-out duration-300 group hover:bg-red-600  flex items-center justify-start gap-2 shadow bg-white">
+                            <div className="w-8 h-8 relative">
                                 <Image 
                                     src="/icons/google.png"
                                     alt="google"
@@ -79,10 +79,10 @@ export default function Signup(){
                                     className="object-contain object-center"
                                 />
                             </div>
-                            <span className="text-black group-hover:text-blue-600 transition-all ease-in-out duration-300 font-bold md:text-md text-sm">Signup with google</span>
+                            <span className="text-black group-hover:text-blue-600 transition-all ease-in-out duration-300 font-bold text-sm">Signup with google</span>
                         </button>
-                        <button className="w-1/2 rounded-full p-2 cursor-pointer hover:bg-blue-600  transition-all ease-in-out duration-300 group  text-white flex items-center justify-center gap-2 shadow bg-white">
-                            <div className="w-10 h-10 relative">
+                        <button className="w-1/2 rounded-full p-1 cursor-pointer hover:bg-blue-600  transition-all ease-in-out duration-300 group  text-white flex items-center justify-start gap-2 shadow bg-white">
+                            <div className="w-8 h-8 relative">
                                 <Image 
                                     src="/icons/facebook.png"
                                     alt="facebook"
@@ -90,7 +90,7 @@ export default function Signup(){
                                     className="object-contain object-center"
                                 />
                             </div>
-                            <span className="text-black group-hover:text-white transition-all ease-in-out duration-300 font-bold md:text-md text-sm">Signup with facebook</span>
+                            <span className="text-black group-hover:text-white transition-all ease-in-out duration-300 font-bold text-sm">Signup with facebook</span>
                         </button>
                     </div>
                 </div>
@@ -104,8 +104,8 @@ export default function Signup(){
                         value={formData.username}
                         onChange={handleChange}
                         required
-                        className="w-[85%] p-3 px-4 bg-white rounded-full font-mono text-gray-700 focus:outline-orange-600" placeholder="Username :" />
-                        <div className="flex-1 flex items-center justify-center">
+                        className="w-[85%] font-sans text-sm p-3 px-4 bg-white rounded-full text-gray-700 focus:outline-orange-600" placeholder="Username :" />
+                        <div className="flex-1 flex  items-center justify-center">
                             <AccountCircleRoundedIcon className={`text-[30px]! ${focusedField === "username"?"text-orange-600":"text-white "}`}/>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function Signup(){
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-[85%] p-3 px-4 bg-white rounded-full font-mono text-gray-700 focus:outline-orange-600" placeholder="Email :" />
+                        className="w-[85%] p-3 px-4 text-sm font-sans bg-white rounded-full text-gray-700 focus:outline-orange-600" placeholder="Email :" />
                         <div className="flex-1 flex items-center justify-center">
                             <EmailRoundedIcon className={`text-[30px]! ${focusedField === "email"?"text-orange-600":"text-white "}`}/>
                         </div>
@@ -132,7 +132,7 @@ export default function Signup(){
                         value={formData.password}
                         onChange={handleChange}
                         required
-                        className="w-[85%] p-3 px-4 bg-white rounded-full font-mono text-gray-700 focus:outline-orange-600" placeholder="Password :" />
+                        className="w-[85%] p-3 px-4 text-sm font-sans bg-white rounded-full text-gray-700 focus:outline-orange-600" placeholder="Password :" />
                         <div className="flex-1 flex items-center justify-center">
                             <button
                             onClick={()=>togglePasswordVisibility('password')}
@@ -151,7 +151,7 @@ export default function Signup(){
                         value={formData.confirmPassword}
                         onChange={handleChange}
                         required
-                        className="w-[85%] p-3 px-4 bg-white rounded-full font-mono text-gray-700 focus:outline-orange-600" placeholder="Confirm Password :" />
+                        className="w-[85%] p-3 px-4 text-sm font-sans bg-white rounded-full text-gray-700 focus:outline-orange-600" placeholder="Confirm Password :" />
                         <div className="flex-1 flex items-center justify-center">
                             <button
                             onClick={()=>togglePasswordVisibility("confirmPassword")}
@@ -162,7 +162,7 @@ export default function Signup(){
                     </div>
 
                     <div className="w-full">
-                        <button className="w-full text-center text-white font-bold p-3 bg-red-600  shadow cursor-pointer rounded-full mt-8">Create Account</button>
+                        <button className="w-full text-center text-white font-bold p-3 bg-red-600  shadow cursor-pointer rounded-full mt-8 transition-all duration-300 ease-in-out hover:bg-amber-500">Create Account</button>
                     </div>
                     <div className="w-full mt-4 flex gap-4">
                         <p className="text-white">Already have an account ?</p>

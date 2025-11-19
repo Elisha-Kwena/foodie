@@ -15,7 +15,7 @@ export default function Navbar(){
     // const {isCartOpen,toggleCart} = useCart()
     return(
         <>
-            <header className={`z-100 md:fixed shadow grid place-items-center h-14 md:top-1 p-2 bg-white rounded md:right-1 right-0 transition-all duration-700 ease-in-out ${isOpen ?"left-74":"left-0 md:left-18"}`}>
+            <header className={`z-100 fixed shadow grid place-items-center h-14 md:top-1 p-2 bg-white md:rounded md:right-1 right-0 transition-all duration-700 ease-in-out ${isOpen ?"left-0 md:left-74":"left-0 md:left-18"}`}>
                 <nav className="w-full flex items-center justify-between">
                     <div className="w-full flex items-center justify-start gap-2">
                         <button onClick={toggleSidebar} className="group cursor-pointer relative rounded overflow-hidden p-1 ">

@@ -9,11 +9,11 @@ import cat8 from "../../public/images/categories/drinks.png"
 
 export const categories = [
     {label:"all",icon:cat1},
-    {label:"appetizers",icon:cat2},
-    {label:"drinks",icon:cat8},
-    {label:"Burgers",icon:cat3},
+    {label:"breakfast",icon:cat2},
+    {label:"lunch",icon:cat8},
+    {label:"dinner",icon:cat3},
     {label:"pizza",icon:cat4},
-    {label:"sides",icon:cat5},
+    {label:"burgers",icon:cat5},
     {label:"desserts",icon:cat7},
-    {label:"street",icon:cat6},
+    {label:"drinks",icon:cat6},
 ]
