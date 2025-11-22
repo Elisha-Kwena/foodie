@@ -11,7 +11,7 @@ export default function Cart(){
         <>
             <div className="w-full h-full flex flex-col gap-2 md:rounded shadow bg-white p-1">
                 <div className="w-full bg-gray-200 p-1 rounded">
-                    <h1 className="font-extrabold capitalize text-lg">Delivery Address</h1>
+                    <h1 className="font-extrabold capitalize text-lg text-black">Delivery Address</h1>
                     <div className="w-full flex items-center justify-start gap-2">
                         <LocationOnIcon className='text-gray-500 text-[20px]!'/>
                         <p className="text-gray-600 text-sm font-sans">Kisumu ndogo</p>
