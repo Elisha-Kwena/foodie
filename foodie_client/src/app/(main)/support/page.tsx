@@ -2,9 +2,6 @@
 import Image from "next/image"
 import { useSidebar } from "@/contexts/SidebarContext"
 
-import XIcon from '@mui/icons-material/X';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import SocialLinks from "@/components/pages/support/Social";
 import ContactForm from "@/components/pages/support/ContactForm";
 

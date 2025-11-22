@@ -9,6 +9,8 @@ import Image from "next/image"
 import Foods from "@/components/pages/home/Foods"
 import Cart from "@/components/pages/home/Cart"
 
+import Footer from "@/components/pages/home/footer"
+
 export default function Home(){
     const {isOpen} = useSidebar()
     const [selectedCategory, setSelectedCategory] = useState<string | null>("all")
@@ -51,6 +53,10 @@ export default function Home(){
                         {/* food stuffs - this is the scrollable part */}
                         <div className="w-full overflow-y-auto grow px-0.5">
                             <Foods/>
+                        </div>
+
+                        <div className="w-full">
+                            <Footer/>
                         </div>
                     </div>
 

@@ -19,6 +19,42 @@ import food18 from "../../public/images/pancakes.png"
 import food19 from "../../public/images/smocha.png"
 
 
+
+import special1 from "../../public/special/mushroom.jpeg"
+import special2 from "../../public/special/salmon.jpeg"
+import special3 from "../../public/special/beef.jpeg"
+
+export const dailySpecials = [
+    {
+        id: 1,
+        name: "Truffle Mushroom Risotto",
+        description: "Creamy arborio rice with wild mushrooms, white truffle oil, and parmesan cheese",
+        price: 500,
+        originalPrice: 750,
+        image: special1,
+        category: "Italian",
+    },
+    {
+        id: 2,
+        name: "Grilled Salmon Teriyaki",
+        description: "Fresh Atlantic salmon glazed with homemade teriyaki sauce, served with jasmine rice and seasonal vegetables",
+        price: 639,
+        originalPrice: 840,
+        image: special2,
+        category: "Japanese",
+    },
+    {
+        id: 3,
+        name: "Beef Bourguignon",
+        description: "Slow-cooked beef in red wine sauce with pearl onions, mushrooms, and herbs",
+        price: 638,
+        originalPrice: 969,
+        image: special3,
+        category: "French",
+    }
+];
+
+
 export const foodies =[
     {
         id:1,
