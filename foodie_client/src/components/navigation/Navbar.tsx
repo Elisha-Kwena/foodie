@@ -10,6 +10,7 @@ import SpaceDashboardRoundedIcon from '@mui/icons-material/SpaceDashboardRounded
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import LoginRoundedIcon from '@mui/icons-material/LoginRounded';
 export default function Navbar(){
     const {isOpen,toggleSidebar} = useSidebar()
     // const {isCartOpen,toggleCart} = useCart()
@@ -27,7 +28,7 @@ export default function Navbar(){
                         </button>
                     </div>
                     <div className="flex items-center justify-end gap-6">
-                        <Link href="" className="flex items-center justify-start gap-2 group">
+                        {/* <Link href="" className="flex items-center justify-start gap-2 group">
                             <div className="w-8 h-8 relative rounded-full bg-gray-400">
                                 <Image 
                                     src="/icons/logo.png"
@@ -38,6 +39,10 @@ export default function Navbar(){
                                 <div className="absolute w-3 h-3 rounded-full top-0 right-0 bg-green-500"></div>
                             </div>
                             <p className="font-sans group-hover:text-[orangered] text-black font-bold">RedHat_109</p>
+                        </Link> */}
+                        <Link href="/signup" className="text-orange-600 font-bold font-sans flex items-center justify-start gap-1">
+                            <LoginRoundedIcon/>
+                            <span>SignUp</span>
                         </Link>
                         <div className="flex items-center justify-between gap-4">
                             <button className="w-8 h-8 flex items-center justify-center rounded relative">
@@ -49,15 +54,7 @@ export default function Navbar(){
                                 <div className="absolute w-3 h-3 rounded-full -top-1 right-0 bg-red-500"></div>
                             </button>
                         </div>
-                        {/* <div className="md:hidden flex items-center justify-between gap-4">
-                            <button onClick={toggleCart} className={`w-8 h-8 flex items-center justify-center rounded relative ${isCartOpen ?"bg-gray-400":"bg-transparent"}`}>
-                                {isCartOpen ? (
-                                    <CloseRoundedIcon className="text-[orangered] text-[28px]!"/>
-                                ):(
-                                    <LocalMallRoundedIcon className="text-[orangered] text-[28px]!"/>
-                                )}
-                            </button>
-                        </div> */}
+                        
                     </div>
                     
                 </nav>
