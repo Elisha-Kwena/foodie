@@ -38,7 +38,7 @@ export default function PersonalInfo(){
                     <div className="text-center">
                         <div className="relative inline-block">
                             <img 
-                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" 
+                                src="/images/user.png" 
                                 alt="Profile" 
                                 className="w-24 h-24 rounded-full border-4 border-gray-200 object-cover"
                             />
